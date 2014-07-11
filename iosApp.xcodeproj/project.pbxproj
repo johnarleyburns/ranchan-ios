@@ -12,13 +12,17 @@
 		868D14B0196CC68B00F3842A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 868D14AF196CC68B00F3842A /* UIKit.framework */; };
 		868D14B6196CC68B00F3842A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 868D14B4196CC68B00F3842A /* InfoPlist.strings */; };
 		868D14B8196CC68B00F3842A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 868D14B7196CC68B00F3842A /* main.m */; };
-		868D14BC196CC68B00F3842A /* XYZAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 868D14BB196CC68B00F3842A /* XYZAppDelegate.m */; };
+		868D14BC196CC68B00F3842A /* RanchanAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 868D14BB196CC68B00F3842A /* RanchanAppDelegate.m */; };
 		868D14BE196CC68B00F3842A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 868D14BD196CC68B00F3842A /* Images.xcassets */; };
 		868D14C5196CC68B00F3842A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 868D14C4196CC68B00F3842A /* XCTest.framework */; };
 		868D14C6196CC68B00F3842A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 868D14AB196CC68B00F3842A /* Foundation.framework */; };
 		868D14C7196CC68B00F3842A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 868D14AF196CC68B00F3842A /* UIKit.framework */; };
 		868D14CF196CC68B00F3842A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 868D14CD196CC68B00F3842A /* InfoPlist.strings */; };
-		868D14D1196CC68B00F3842A /* ToDoListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 868D14D0196CC68B00F3842A /* ToDoListTests.m */; };
+		868D14D1196CC68B00F3842A /* iosAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 868D14D0196CC68B00F3842A /* iosAppTests.m */; };
+		868D14DB196CCCF000F3842A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 868D14DA196CCCF000F3842A /* Main.storyboard */; };
+		868D14DE196F502B00F3842A /* RanchanAddThreadItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 868D14DD196F502B00F3842A /* RanchanAddThreadItemViewController.m */; };
+		868D14E1196F50CA00F3842A /* RanchanThreadListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 868D14E0196F50CA00F3842A /* RanchanThreadListTableViewController.m */; };
+		868D14E4196F5CC900F3842A /* RanchanThreadItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 868D14E3196F5CC900F3842A /* RanchanThreadItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,27 +31,34 @@
 			containerPortal = 868D14A0196CC68B00F3842A /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 868D14A7196CC68B00F3842A;
-			remoteInfo = ToDoList;
+			remoteInfo = iosApp;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		868D14A8196CC68B00F3842A /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		868D14A8196CC68B00F3842A /* iosApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		868D14AB196CC68B00F3842A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		868D14AD196CC68B00F3842A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		868D14AF196CC68B00F3842A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		868D14B3196CC68B00F3842A /* ToDoList-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ToDoList-Info.plist"; sourceTree = "<group>"; };
+		868D14B3196CC68B00F3842A /* iosApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iosApp-Info.plist"; sourceTree = "<group>"; };
 		868D14B5196CC68B00F3842A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		868D14B7196CC68B00F3842A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		868D14B9196CC68B00F3842A /* ToDoList-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ToDoList-Prefix.pch"; sourceTree = "<group>"; };
-		868D14BA196CC68B00F3842A /* XYZAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYZAppDelegate.h; sourceTree = "<group>"; };
-		868D14BB196CC68B00F3842A /* XYZAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYZAppDelegate.m; sourceTree = "<group>"; };
+		868D14B9196CC68B00F3842A /* iosApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iosApp-Prefix.pch"; sourceTree = "<group>"; };
+		868D14BA196CC68B00F3842A /* RanchanAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RanchanAppDelegate.h; sourceTree = "<group>"; };
+		868D14BB196CC68B00F3842A /* RanchanAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RanchanAppDelegate.m; sourceTree = "<group>"; };
 		868D14BD196CC68B00F3842A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		868D14C3196CC68B00F3842A /* ToDoListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		868D14C3196CC68B00F3842A /* iosAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iosAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		868D14C4196CC68B00F3842A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		868D14CC196CC68B00F3842A /* ToDoListTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ToDoListTests-Info.plist"; sourceTree = "<group>"; };
+		868D14CC196CC68B00F3842A /* iosAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iosAppTests-Info.plist"; sourceTree = "<group>"; };
 		868D14CE196CC68B00F3842A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		868D14D0196CC68B00F3842A /* ToDoListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToDoListTests.m; sourceTree = "<group>"; };
+		868D14D0196CC68B00F3842A /* iosAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iosAppTests.m; sourceTree = "<group>"; };
+		868D14DA196CCCF000F3842A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		868D14DC196F502B00F3842A /* RanchanAddThreadItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RanchanAddThreadItemViewController.h; sourceTree = "<group>"; };
+		868D14DD196F502B00F3842A /* RanchanAddThreadItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RanchanAddThreadItemViewController.m; sourceTree = "<group>"; };
+		868D14DF196F50CA00F3842A /* RanchanThreadListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RanchanThreadListTableViewController.h; sourceTree = "<group>"; };
+		868D14E0196F50CA00F3842A /* RanchanThreadListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RanchanThreadListTableViewController.m; sourceTree = "<group>"; };
+		868D14E2196F5CC900F3842A /* RanchanThreadItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RanchanThreadItem.h; sourceTree = "<group>"; };
+		868D14E3196F5CC900F3842A /* RanchanThreadItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RanchanThreadItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +88,8 @@
 		868D149F196CC68B00F3842A = {
 			isa = PBXGroup;
 			children = (
-				868D14B1196CC68B00F3842A /* ToDoList */,
-				868D14CA196CC68B00F3842A /* ToDoListTests */,
+				868D14B1196CC68B00F3842A /* iosApp */,
+				868D14CA196CC68B00F3842A /* iosAppTests */,
 				868D14AA196CC68B00F3842A /* Frameworks */,
 				868D14A9196CC68B00F3842A /* Products */,
 			);
@@ -87,8 +98,8 @@
 		868D14A9196CC68B00F3842A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				868D14A8196CC68B00F3842A /* ToDoList.app */,
-				868D14C3196CC68B00F3842A /* ToDoListTests.xctest */,
+				868D14A8196CC68B00F3842A /* iosApp.app */,
+				868D14C3196CC68B00F3842A /* iosAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -104,41 +115,48 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		868D14B1196CC68B00F3842A /* ToDoList */ = {
+		868D14B1196CC68B00F3842A /* iosApp */ = {
 			isa = PBXGroup;
 			children = (
-				868D14BA196CC68B00F3842A /* XYZAppDelegate.h */,
-				868D14BB196CC68B00F3842A /* XYZAppDelegate.m */,
+				868D14BA196CC68B00F3842A /* RanchanAppDelegate.h */,
+				868D14BB196CC68B00F3842A /* RanchanAppDelegate.m */,
+				868D14DA196CCCF000F3842A /* Main.storyboard */,
+				868D14DF196F50CA00F3842A /* RanchanThreadListTableViewController.h */,
+				868D14E0196F50CA00F3842A /* RanchanThreadListTableViewController.m */,
+				868D14E2196F5CC900F3842A /* RanchanThreadItem.h */,
+				868D14E3196F5CC900F3842A /* RanchanThreadItem.m */,
+				868D14DC196F502B00F3842A /* RanchanAddThreadItemViewController.h */,
+				868D14DD196F502B00F3842A /* RanchanAddThreadItemViewController.m */,
 				868D14BD196CC68B00F3842A /* Images.xcassets */,
 				868D14B2196CC68B00F3842A /* Supporting Files */,
 			);
-			path = ToDoList;
+			path = iosApp;
 			sourceTree = "<group>";
 		};
 		868D14B2196CC68B00F3842A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				868D14B3196CC68B00F3842A /* ToDoList-Info.plist */,
+				868D14B3196CC68B00F3842A /* iosApp-Info.plist */,
 				868D14B4196CC68B00F3842A /* InfoPlist.strings */,
 				868D14B7196CC68B00F3842A /* main.m */,
-				868D14B9196CC68B00F3842A /* ToDoList-Prefix.pch */,
+				868D14B9196CC68B00F3842A /* iosApp-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		868D14CA196CC68B00F3842A /* ToDoListTests */ = {
+		868D14CA196CC68B00F3842A /* iosAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				868D14D0196CC68B00F3842A /* ToDoListTests.m */,
+				868D14D0196CC68B00F3842A /* iosAppTests.m */,
 				868D14CB196CC68B00F3842A /* Supporting Files */,
 			);
-			path = ToDoListTests;
+			path = iosAppTests;
 			sourceTree = "<group>";
 		};
 		868D14CB196CC68B00F3842A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				868D14CC196CC68B00F3842A /* ToDoListTests-Info.plist */,
+				868D14CC196CC68B00F3842A /* iosAppTests-Info.plist */,
 				868D14CD196CC68B00F3842A /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -147,9 +165,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		868D14A7196CC68B00F3842A /* ToDoList */ = {
+		868D14A7196CC68B00F3842A /* iosApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 868D14D4196CC68B00F3842A /* Build configuration list for PBXNativeTarget "ToDoList" */;
+			buildConfigurationList = 868D14D4196CC68B00F3842A /* Build configuration list for PBXNativeTarget "iosApp" */;
 			buildPhases = (
 				868D14A4196CC68B00F3842A /* Sources */,
 				868D14A5196CC68B00F3842A /* Frameworks */,
@@ -159,14 +177,14 @@
 			);
 			dependencies = (
 			);
-			name = ToDoList;
-			productName = ToDoList;
-			productReference = 868D14A8196CC68B00F3842A /* ToDoList.app */;
+			name = iosApp;
+			productName = iosApp;
+			productReference = 868D14A8196CC68B00F3842A /* iosApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		868D14C2196CC68B00F3842A /* ToDoListTests */ = {
+		868D14C2196CC68B00F3842A /* iosAppTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 868D14D7196CC68B00F3842A /* Build configuration list for PBXNativeTarget "ToDoListTests" */;
+			buildConfigurationList = 868D14D7196CC68B00F3842A /* Build configuration list for PBXNativeTarget "iosAppTests" */;
 			buildPhases = (
 				868D14BF196CC68B00F3842A /* Sources */,
 				868D14C0196CC68B00F3842A /* Frameworks */,
@@ -177,9 +195,9 @@
 			dependencies = (
 				868D14C9196CC68B00F3842A /* PBXTargetDependency */,
 			);
-			name = ToDoListTests;
-			productName = ToDoListTests;
-			productReference = 868D14C3196CC68B00F3842A /* ToDoListTests.xctest */;
+			name = iosAppTests;
+			productName = iosAppTests;
+			productReference = 868D14C3196CC68B00F3842A /* iosAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -188,16 +206,16 @@
 		868D14A0196CC68B00F3842A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = XYZ;
+				CLASSPREFIX = Ranchan;
 				LastUpgradeCheck = 0500;
-				ORGANIZATIONNAME = "John Arley Burns";
+				ORGANIZATIONNAME = "Chanapps Software LLC";
 				TargetAttributes = {
 					868D14C2196CC68B00F3842A = {
 						TestTargetID = 868D14A7196CC68B00F3842A;
 					};
 				};
 			};
-			buildConfigurationList = 868D14A3196CC68B00F3842A /* Build configuration list for PBXProject "ToDoList" */;
+			buildConfigurationList = 868D14A3196CC68B00F3842A /* Build configuration list for PBXProject "iosApp" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -209,8 +227,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				868D14A7196CC68B00F3842A /* ToDoList */,
-				868D14C2196CC68B00F3842A /* ToDoListTests */,
+				868D14A7196CC68B00F3842A /* iosApp */,
+				868D14C2196CC68B00F3842A /* iosAppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -220,6 +238,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				868D14DB196CCCF000F3842A /* Main.storyboard in Resources */,
 				868D14B6196CC68B00F3842A /* InfoPlist.strings in Resources */,
 				868D14BE196CC68B00F3842A /* Images.xcassets in Resources */,
 			);
@@ -240,8 +259,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				868D14BC196CC68B00F3842A /* XYZAppDelegate.m in Sources */,
+				868D14BC196CC68B00F3842A /* RanchanAppDelegate.m in Sources */,
+				868D14E4196F5CC900F3842A /* RanchanThreadItem.m in Sources */,
 				868D14B8196CC68B00F3842A /* main.m in Sources */,
+				868D14E1196F50CA00F3842A /* RanchanThreadListTableViewController.m in Sources */,
+				868D14DE196F502B00F3842A /* RanchanAddThreadItemViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,7 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				868D14D1196CC68B00F3842A /* ToDoListTests.m in Sources */,
+				868D14D1196CC68B00F3842A /* iosAppTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +280,7 @@
 /* Begin PBXTargetDependency section */
 		868D14C9196CC68B00F3842A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 868D14A7196CC68B00F3842A /* ToDoList */;
+			target = 868D14A7196CC68B00F3842A /* iosApp */;
 			targetProxy = 868D14C8196CC68B00F3842A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -361,9 +383,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ToDoList/ToDoList-Prefix.pch";
-				INFOPLIST_FILE = "ToDoList/ToDoList-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "iosApp/iosApp-Prefix.pch";
+				INFOPLIST_FILE = "iosApp/iosApp-Info.plist";
+				PRODUCT_NAME = iosApp;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -374,9 +396,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ToDoList/ToDoList-Prefix.pch";
-				INFOPLIST_FILE = "ToDoList/ToDoList-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "iosApp/iosApp-Prefix.pch";
+				INFOPLIST_FILE = "iosApp/iosApp-Info.plist";
+				PRODUCT_NAME = iosApp;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -385,20 +407,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ToDoList.app/ToDoList";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iosApp.app/iosApp";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ToDoList/ToDoList-Prefix.pch";
+				GCC_PREFIX_HEADER = "iosApp/iosApp-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "ToDoListTests/ToDoListTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "iosAppTests/iosAppTests-Info.plist";
+				PRODUCT_NAME = iosAppTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -408,16 +430,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ToDoList.app/ToDoList";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iosApp.app/iosApp";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ToDoList/ToDoList-Prefix.pch";
-				INFOPLIST_FILE = "ToDoListTests/ToDoListTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "iosApp/iosApp-Prefix.pch";
+				INFOPLIST_FILE = "iosAppTests/iosAppTests-Info.plist";
+				PRODUCT_NAME = iosAppTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -426,7 +448,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		868D14A3196CC68B00F3842A /* Build configuration list for PBXProject "ToDoList" */ = {
+		868D14A3196CC68B00F3842A /* Build configuration list for PBXProject "iosApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				868D14D2196CC68B00F3842A /* Debug */,
@@ -435,21 +457,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		868D14D4196CC68B00F3842A /* Build configuration list for PBXNativeTarget "ToDoList" */ = {
+		868D14D4196CC68B00F3842A /* Build configuration list for PBXNativeTarget "iosApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				868D14D5196CC68B00F3842A /* Debug */,
 				868D14D6196CC68B00F3842A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		868D14D7196CC68B00F3842A /* Build configuration list for PBXNativeTarget "ToDoListTests" */ = {
+		868D14D7196CC68B00F3842A /* Build configuration list for PBXNativeTarget "iosAppTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				868D14D8196CC68B00F3842A /* Debug */,
 				868D14D9196CC68B00F3842A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

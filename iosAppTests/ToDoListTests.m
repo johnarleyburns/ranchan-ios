@@ -1,6 +1,6 @@
 //
-//  ToDoListTests.m
-//  ToDoListTests
+//  ThreadListTests.m
+//  ThreadListTests
 //
 //  Created by John Arley Burns on 08/07/14.
 //  Copyright (c) 2014 John Arley Burns. All rights reserved.
@@ -8,11 +8,11 @@
 
 #import <XCTest/XCTest.h>
 
-@interface ToDoListTests : XCTestCase
+@interface ThreadListTests : XCTestCase
 
 @end
 
-@implementation ToDoListTests
+@implementation ThreadListTests
 
 - (void)setUp
 {
