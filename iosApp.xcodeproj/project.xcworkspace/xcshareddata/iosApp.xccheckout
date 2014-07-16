@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B24321D6-5DCD-4610-ADBD-BDDF3E5FC916</string>
+	<key>IDESourceControlProjectName</key>
+	<string>iosApp</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>F8B5FD30-2F4E-4385-976F-F1078141B410</key>
+		<string>https://github.com/johnarleyburns/ranchan-ios.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>iosApp.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>F8B5FD30-2F4E-4385-976F-F1078141B410</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/johnarleyburns/ranchan-ios.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>F8B5FD30-2F4E-4385-976F-F1078141B410</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F8B5FD30-2F4E-4385-976F-F1078141B410</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ranchan-ios</string>
+		</dict>
+	</array>
+</dict>
+</plist>

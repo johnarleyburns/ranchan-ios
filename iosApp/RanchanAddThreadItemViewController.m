@@ -44,7 +44,7 @@
     }
     if (self.textField.text.length > 0) {
         self.threadItem = [[RanchanThreadItem alloc] init];
-        self.threadItem.itemName = self.textField.text;
+        self.threadItem.content = self.textField.text;
         self.threadItem.completed = NO;
     }
 }

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8637B6421971DEDB00376765 /* RanchanThreadListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8637B6411971DEDB00376765 /* RanchanThreadListTableViewCell.m */; };
+		8679FC651971AD8C0098DF2B /* RanchanThreadItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8679FC641971AD8C0098DF2B /* RanchanThreadItemModel.m */; };
+		8688E5711970CA5200A8414A /* RanchanTestHarness.m in Sources */ = {isa = PBXBuildFile; fileRef = 8688E5701970CA5200A8414A /* RanchanTestHarness.m */; };
 		868D14AC196CC68B00F3842A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 868D14AB196CC68B00F3842A /* Foundation.framework */; };
 		868D14AE196CC68B00F3842A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 868D14AD196CC68B00F3842A /* CoreGraphics.framework */; };
 		868D14B0196CC68B00F3842A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 868D14AF196CC68B00F3842A /* UIKit.framework */; };
@@ -23,6 +26,8 @@
 		868D14DE196F502B00F3842A /* RanchanAddThreadItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 868D14DD196F502B00F3842A /* RanchanAddThreadItemViewController.m */; };
 		868D14E1196F50CA00F3842A /* RanchanThreadListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 868D14E0196F50CA00F3842A /* RanchanThreadListTableViewController.m */; };
 		868D14E4196F5CC900F3842A /* RanchanThreadItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 868D14E3196F5CC900F3842A /* RanchanThreadItem.m */; };
+		B6CB5EF976F2425C9529510C /* libPods-iosAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 15F019AC541D4B6284AD9E31 /* libPods-iosAppTests.a */; };
+		E257C3D940864D03B7461FFB /* libPods-iosApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 525D86CA01B349829BA94163 /* libPods-iosApp.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +41,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		15F019AC541D4B6284AD9E31 /* libPods-iosAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iosAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C4B12B415DC4BD5AAEF2AD8 /* Pods-iosAppTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosAppTests.xcconfig"; path = "Pods/Pods-iosAppTests.xcconfig"; sourceTree = "<group>"; };
+		33D44309865748B1AE2FA97A /* Pods-iosApp.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosApp.xcconfig"; path = "Pods/Pods-iosApp.xcconfig"; sourceTree = "<group>"; };
+		525D86CA01B349829BA94163 /* libPods-iosApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iosApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8637B6401971DEDB00376765 /* RanchanThreadListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RanchanThreadListTableViewCell.h; path = ../RanchanThreadListTableViewCell.h; sourceTree = "<group>"; };
+		8637B6411971DEDB00376765 /* RanchanThreadListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RanchanThreadListTableViewCell.m; path = ../RanchanThreadListTableViewCell.m; sourceTree = "<group>"; };
+		8679FC631971AD8C0098DF2B /* RanchanThreadItemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RanchanThreadItemModel.h; sourceTree = "<group>"; };
+		8679FC641971AD8C0098DF2B /* RanchanThreadItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RanchanThreadItemModel.m; sourceTree = "<group>"; };
+		8688E56F1970CA5200A8414A /* RanchanTestHarness.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RanchanTestHarness.h; sourceTree = "<group>"; };
+		8688E5701970CA5200A8414A /* RanchanTestHarness.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RanchanTestHarness.m; sourceTree = "<group>"; };
 		868D14A8196CC68B00F3842A /* iosApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		868D14AB196CC68B00F3842A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		868D14AD196CC68B00F3842A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -69,6 +84,7 @@
 				868D14AE196CC68B00F3842A /* CoreGraphics.framework in Frameworks */,
 				868D14B0196CC68B00F3842A /* UIKit.framework in Frameworks */,
 				868D14AC196CC68B00F3842A /* Foundation.framework in Frameworks */,
+				E257C3D940864D03B7461FFB /* libPods-iosApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +95,7 @@
 				868D14C5196CC68B00F3842A /* XCTest.framework in Frameworks */,
 				868D14C7196CC68B00F3842A /* UIKit.framework in Frameworks */,
 				868D14C6196CC68B00F3842A /* Foundation.framework in Frameworks */,
+				B6CB5EF976F2425C9529510C /* libPods-iosAppTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +109,8 @@
 				868D14CA196CC68B00F3842A /* iosAppTests */,
 				868D14AA196CC68B00F3842A /* Frameworks */,
 				868D14A9196CC68B00F3842A /* Products */,
+				33D44309865748B1AE2FA97A /* Pods-iosApp.xcconfig */,
+				1C4B12B415DC4BD5AAEF2AD8 /* Pods-iosAppTests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,6 +130,8 @@
 				868D14AD196CC68B00F3842A /* CoreGraphics.framework */,
 				868D14AF196CC68B00F3842A /* UIKit.framework */,
 				868D14C4196CC68B00F3842A /* XCTest.framework */,
+				525D86CA01B349829BA94163 /* libPods-iosApp.a */,
+				15F019AC541D4B6284AD9E31 /* libPods-iosAppTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -118,17 +139,23 @@
 		868D14B1196CC68B00F3842A /* iosApp */ = {
 			isa = PBXGroup;
 			children = (
+				8637B6401971DEDB00376765 /* RanchanThreadListTableViewCell.h */,
+				8637B6411971DEDB00376765 /* RanchanThreadListTableViewCell.m */,
 				868D14BA196CC68B00F3842A /* RanchanAppDelegate.h */,
 				868D14BB196CC68B00F3842A /* RanchanAppDelegate.m */,
 				868D14DA196CCCF000F3842A /* Main.storyboard */,
 				868D14DF196F50CA00F3842A /* RanchanThreadListTableViewController.h */,
 				868D14E0196F50CA00F3842A /* RanchanThreadListTableViewController.m */,
 				868D14E2196F5CC900F3842A /* RanchanThreadItem.h */,
+				8679FC631971AD8C0098DF2B /* RanchanThreadItemModel.h */,
+				8679FC641971AD8C0098DF2B /* RanchanThreadItemModel.m */,
 				868D14E3196F5CC900F3842A /* RanchanThreadItem.m */,
 				868D14DC196F502B00F3842A /* RanchanAddThreadItemViewController.h */,
 				868D14DD196F502B00F3842A /* RanchanAddThreadItemViewController.m */,
 				868D14BD196CC68B00F3842A /* Images.xcassets */,
 				868D14B2196CC68B00F3842A /* Supporting Files */,
+				8688E56F1970CA5200A8414A /* RanchanTestHarness.h */,
+				8688E5701970CA5200A8414A /* RanchanTestHarness.m */,
 			);
 			path = iosApp;
 			sourceTree = "<group>";
@@ -169,9 +196,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 868D14D4196CC68B00F3842A /* Build configuration list for PBXNativeTarget "iosApp" */;
 			buildPhases = (
+				83C225B5D2EC4A57A184A8DD /* Check Pods Manifest.lock */,
 				868D14A4196CC68B00F3842A /* Sources */,
 				868D14A5196CC68B00F3842A /* Frameworks */,
 				868D14A6196CC68B00F3842A /* Resources */,
+				2565B02B070045309ECE2A51 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -186,9 +215,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 868D14D7196CC68B00F3842A /* Build configuration list for PBXNativeTarget "iosAppTests" */;
 			buildPhases = (
+				5665919556404AB59F9A16F0 /* Check Pods Manifest.lock */,
 				868D14BF196CC68B00F3842A /* Sources */,
 				868D14C0196CC68B00F3842A /* Frameworks */,
 				868D14C1196CC68B00F3842A /* Resources */,
+				577483F1A7234A2583115F6D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -254,11 +285,77 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2565B02B070045309ECE2A51 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-iosApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5665919556404AB59F9A16F0 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		577483F1A7234A2583115F6D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-iosAppTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		83C225B5D2EC4A57A184A8DD /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		868D14A4196CC68B00F3842A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8679FC651971AD8C0098DF2B /* RanchanThreadItemModel.m in Sources */,
+				8688E5711970CA5200A8414A /* RanchanTestHarness.m in Sources */,
+				8637B6421971DEDB00376765 /* RanchanThreadListTableViewCell.m in Sources */,
 				868D14BC196CC68B00F3842A /* RanchanAppDelegate.m in Sources */,
 				868D14E4196F5CC900F3842A /* RanchanThreadItem.m in Sources */,
 				868D14B8196CC68B00F3842A /* main.m in Sources */,
@@ -379,6 +476,7 @@
 		};
 		868D14D5196CC68B00F3842A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33D44309865748B1AE2FA97A /* Pods-iosApp.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -392,6 +490,7 @@
 		};
 		868D14D6196CC68B00F3842A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33D44309865748B1AE2FA97A /* Pods-iosApp.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -405,6 +504,7 @@
 		};
 		868D14D8196CC68B00F3842A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C4B12B415DC4BD5AAEF2AD8 /* Pods-iosAppTests.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iosApp.app/iosApp";
@@ -428,6 +528,7 @@
 		};
 		868D14D9196CC68B00F3842A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C4B12B415DC4BD5AAEF2AD8 /* Pods-iosAppTests.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iosApp.app/iosApp";

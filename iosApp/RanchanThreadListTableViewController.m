@@ -6,9 +6,12 @@
 //  Copyright (c) 2014 John Arley Burns. All rights reserved.
 //
 
+#import <SDWebImage/UIImageView+WebCache.h>
 #import "RanchanThreadListTableViewController.h"
 #import "RanchanThreadItem.h"
 #import "RanchanAddThreadItemViewController.h"
+#import "RanchanTestHarness.h"
+//#import "RanchanThreadListTableViewCell.h"
 
 @interface RanchanThreadListTableViewController ()
 
@@ -18,19 +21,12 @@
 
 @implementation RanchanThreadListTableViewController
 
+//static NSString *CellIdentifier = @"ListPrototypeCell";
+//static NSString *CellIdentifier = @"RanchanThreadListTableViewPrototypeCell";
+static NSString *CellIdentifier = @"ThreadListPrototypeCell";
+
 - (void)loadInitialData {
-    RanchanThreadItem *item1 = [[RanchanThreadItem alloc] init];
-    item1.itemName = @"what anime should i watch?"; // \ndont say boku no pico lol\ni like naruto and one piece so something\ngood like that pls"; // 14p 4i
-    [self.threadItems addObject:item1];
-    
-    RanchanThreadItem *item2 = [[RanchanThreadItem alloc] init];
-    item2.itemName = @"How can you tell if someone is unemployed? List all the telltale signs.";
-    [self.threadItems addObject:item2]; // 128p 12r
-    
-    
-    RanchanThreadItem *item3 = [[RanchanThreadItem alloc] init];
-    item3.itemName = @"23 decides what I say to these tumblr fags sitting next to me.";
-    [self.threadItems addObject:item3]; //23p 2r
+    [[RanchanTestHarness sharedManager] addTestItems:self.threadItems];
 }
 
 - (IBAction)unwindToList:(UIStoryboardSegue*) segue
@@ -64,6 +60,9 @@
     
     self.threadItems = [[NSMutableArray alloc] init];
     [self loadInitialData];
+    
+    //[self.tableView registerClass:[RanchanThreadListTableViewCell class] forCellReuseIdentifier:CellIdentifier];
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -76,38 +75,81 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
     return [self.threadItems count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"ListPrototypeCell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    /*
+    RanchanThreadListTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    if (cell == nil) {
+        cell = [[RanchanThreadListTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
+    }
+    */
     
-    // Configure the cell...
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
+    }// Configure the cell...
     
     RanchanThreadItem *threadItem = [self.threadItems objectAtIndex:indexPath.row];
-    cell.textLabel.text = threadItem.itemName;
     
+    //cell.textLabel.text = threadItem.content;
+    UILabel *contentLabel = (UILabel *)[cell viewWithTag:101];
+    contentLabel.text = threadItem.content;
+    [contentLabel sizeToFit];
+    
+    NSInteger dayDiff = (int)[threadItem.date timeIntervalSinceNow] / (60*60*24);
+    NSString *dateText;
+    NSDateFormatter *df = [[NSDateFormatter alloc] init];
+    if (dayDiff == 0) {
+        df.timeStyle = NSDateFormatterShortStyle;
+        df.dateStyle = NSDateFormatterNoStyle;
+        dateText = [df stringFromDate:threadItem.date];
+    }
+    else {
+        df.timeStyle = NSDateFormatterNoStyle;
+        df.dateStyle = NSDateFormatterShortStyle;
+        dateText = [df stringFromDate:threadItem.date];
+    }
+    //cell.detailTextLabel.text = [NSString stringWithFormat:@"%d chats ~ %@", threadItem.chats, dateText];
+    //cell.detailTextLabel.text = [threadItem thumbUrl];
+    UILabel *detailLabel = (UILabel *)[cell viewWithTag:102];
+    detailLabel.text = [NSString stringWithFormat:@"%d chats ~ %@", threadItem.chats, dateText];
+    [detailLabel sizeToFit];
+    
+    UIImageView *imageView = (UIImageView *)[cell viewWithTag:100];
+    imageView.layer.cornerRadius = 5;
+    imageView.layer.masksToBounds = YES;
+    [imageView setImageWithURL:[NSURL URLWithString:[threadItem thumbUrl]]
+                   placeholderImage:[UIImage imageNamed:@"ThreadListPlaceholder"]];
+    
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    /*
     if (threadItem.completed) {
         cell.accessoryType = UITableViewCellAccessoryCheckmark;
     }
     else {
         cell.accessoryType = UITableViewCellAccessoryNone;
     }
+    */
     
     return cell;
 }
 
+/*
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    return RANCHAN_LIST_CELL_HEIGHT;
+}
+*/
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
