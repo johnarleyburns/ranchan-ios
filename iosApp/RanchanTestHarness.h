@@ -15,6 +15,7 @@
 
 +(id)sharedManager;
 
--(void)addTestItems:(NSMutableArray*)threadItems;
+-(void)addListItems:(NSMutableArray*)threadItems;
+-(void)addDetailItems:(NSMutableArray*)detailItems;
 
 @end

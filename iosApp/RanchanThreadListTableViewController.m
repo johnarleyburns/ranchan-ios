@@ -26,7 +26,7 @@
 static NSString *CellIdentifier = @"ThreadListPrototypeCell";
 
 - (void)loadInitialData {
-    [[RanchanTestHarness sharedManager] addTestItems:self.threadItems];
+    [[RanchanTestHarness sharedManager] addListItems:self.threadItems];
 }
 
 - (IBAction)unwindToList:(UIStoryboardSegue*) segue
@@ -95,9 +95,9 @@ static NSString *CellIdentifier = @"ThreadListPrototypeCell";
     */
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
-    }// Configure the cell...
+    //if (cell == nil) {
+    //    cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
+    //}// Configure the cell...
     
     RanchanThreadItem *threadItem = [self.threadItems objectAtIndex:indexPath.row];
     

@@ -79,36 +79,8 @@
     return self;
 }
 
--(void)addTestItems:(NSMutableArray*)threadItems
+-(void)addListItems:(NSMutableArray*)threadItems
 {
-    /*
-    RanchanThreadItem *item = [[RanchanThreadItem alloc] init];
-    item.content = @"what anime should i watch?"; // \ndont say boku no pico lol\ni like naruto and one piece so something\ngood like that pls"; // 14p 4i
-    item.chats = 14;
-    item.date = [[NSDate alloc] init];
-    [threadItems addObject:item];
-    
-    item = [[RanchanThreadItem alloc] init];
-    item.content = @"How can you tell if someone is unemployed? List all the telltale signs.";
-    item.chats = 128;
-    NSTimeInterval hour = 60 * 60;
-    item.date = [[NSDate alloc] initWithTimeIntervalSinceNow:-hour];
-    [threadItems addObject:item]; // 128p 12r
-    
-    item = [[RanchanThreadItem alloc] init];
-    item.content = @"23 decides what I say to these tumblr fags sitting next to me.";
-    item.chats = 23;
-    NSTimeInterval halfDay = 12 * 60 * 60;
-    item.date = [[NSDate alloc] initWithTimeIntervalSinceNow:-halfDay];
-    [threadItems addObject:item]; //23p 2r
-
-    item = [[RanchanThreadItem alloc] init];
-    item.content = @"grzegorz: wtf how do i pronunce?";
-    item.chats = 0;
-    NSTimeInterval week = 7 * 24 * 60 * 60;
-    item.date = [[NSDate alloc] initWithTimeIntervalSinceNow:-week];
-    [threadItems addObject:item]; //0p 0r
-    */
     
     RanchanThreadItem *item = [[RanchanThreadItem alloc] init];
     item.id = @"7cd91383-6b8b-4432-a5fc-a06d63d561cd";
@@ -154,6 +126,29 @@
     for (id o in testArray)
     {
         [threadItems addObject:[[RanchanThreadItem alloc] initWithArray:o]];
+    }
+    
+}
+
+-(void)addDetailItems:(NSMutableArray*)detailItems
+{
+    NSArray* testArray = @[
+    @[@"7cd91383-6b8b-4432-a5fc-a06d63d561cd", [NSNull null], @"Hey it was my birthday yesterday so I got a new 1tb hard drive which I'm going to dedicate to all my games meaning I need to reinstall my games, plus I got a bunch of money to spend on new games so give me some good recommendation", @"moot", [[NSDate alloc] init], @65343, @665, @396, @0, @187, @32],
+    @[@"a19f590a-eb73-495d-8a6b-c882c106e796", @"7cd91383-6b8b-4432-a5fc-a06d63d561cd", @"help the poor beggers", [NSNull null], [[NSDate alloc] initWithTimeIntervalSinceNow:-(NSTimeInterval)60], @0, @0, @0, @0, @0, @0],
+    @[@"cc6795e3-fa9d-4cb0-9cbc-a3766cd3ccaf", @"7cd91383-6b8b-4432-a5fc-a06d63d561cd", @">help the poor beggers\nI would but I have done that stuff before and I just feel like no one is grateful enough, sorry", [NSNull null], [[NSDate alloc] initWithTimeIntervalSinceNow:-(NSTimeInterval)3*60], @0, @0, @0, @0, @0, @0],
+    @[@"8b67d0c3-d7f0-4c0c-b6f9-66d5d3e3081b", @"7cd91383-6b8b-4432-a5fc-a06d63d561cd", @"Isn't Sven 1/10", @"Captain Flavius", [[NSDate alloc] initWithTimeIntervalSinceNow:-(NSTimeInterval)4*60], @12324, @192, @240, @0, @0, @0],
+    @[@"7914c43c-2147-46c8-adda-ab21466b9f86", @"7cd91383-6b8b-4432-a5fc-a06d63d561cd", @"Rate my favorite dota!", @"dotaboy", [[NSDate alloc] initWithTimeIntervalSinceNow:-(NSTimeInterval)5*60], @3452234, @3072, @2304, @0, @0, @0],
+    @[@"91cd097e-9953-47ae-aec0-cd410bfb6c33", @"7cd91383-6b8b-4432-a5fc-a06d63d561cd", @">Rate my favorite dota!\ncan i get these stuff for free or do i have to pay for it?  i new into dota 2", [NSNull null], [[NSDate alloc] initWithTimeIntervalSinceNow:-(NSTimeInterval)10*60], @0, @0, @0, @0, @0, @0],
+    @[@"ccde0817-5d54-4e22-8c39-6fc10b6f24f2", @"7cd91383-6b8b-4432-a5fc-a06d63d561cd", @">can i get these stuff for free...\nJust play for a while.  You'll get some drops.\n\nUnless you want that immortal, you'll need to pay", [NSNull null], [[NSDate alloc] initWithTimeIntervalSinceNow:-(NSTimeInterval)11*60], @0, @0, @0, @0, @0, @0],
+    @[@"8f7fbea3-8273-42c7-895c-40602780e0a6", @"7cd91383-6b8b-4432-a5fc-a06d63d561cd", @">Playing DOTA instead of a superior MOBA\nhttp://4chan.org\nFaggot Tier/10", @"antifacrusader", [[NSDate alloc] initWithTimeIntervalSinceNow:-(NSTimeInterval)12*60], @0, @0, @0, @0, @0, @0],
+    @[@"520dc9bb-ad7b-4570-a7e6-3d49ae9db277", @"7cd91383-6b8b-4432-a5fc-a06d63d561cd", @"500+ games ALL anti-mage.  Get. The. Fuck. On my level you fucking n00bz.", [NSNull null], [[NSDate alloc] initWithTimeIntervalSinceNow:-(NSTimeInterval)17*60], @0, @0, @0, @0, @0, @0],
+    @[@"c04cbb80-9c55-4096-9a56-788e276835cd", @"7cd91383-6b8b-4432-a5fc-a06d63d561cd", @">Faggot Tier/10\nPlaying MOBA at all.  Stop acting elitist over such a shitty type of game.", [NSNull null], [[NSDate alloc] initWithTimeIntervalSinceNow:-(NSTimeInterval)20*60], @0, @0, @0, @0, @0, @0],
+    @[@"6cef17c6-9719-486a-8535-97f2e4921122", @"7cd91383-6b8b-4432-a5fc-a06d63d561cd", [NSNull null], [NSNull null], [[NSDate alloc] initWithTimeIntervalSinceNow:-(NSTimeInterval)30*60], @55832, @307, @578, @0, @0, @0]
+    ];
+    
+    for (id o in testArray)
+    {
+        [detailItems addObject:[[RanchanThreadItem alloc] initWithArray:o]];
     }
     
 }
